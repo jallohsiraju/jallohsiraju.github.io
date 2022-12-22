@@ -1,0 +1,396 @@
+
+body{
+  margin: 0;
+  background:#FAE7DF ;
+}
+
+/*
+This section contains the style for the nav bar
+*/
+.container {
+  width: 80%;
+  margin: 0 auto;
+  height: 60px;
+  
+}
+
+header{
+  background:#eac8b800;
+}
+.container{
+  background:#fae7dfc8;
+  position: fixed;
+  top: 0;
+  z-index: 30;
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+header ::after{
+  content: '';
+  display: table;
+  clear: both;
+}
+
+nav{
+  float: right;
+  
+}
+
+.logo-name a{
+  position: absolute;
+  margin-top: 20px;
+  margin-left: 10px;
+  padding-left: 40px;
+  font-size: 20px;
+  font-weight: bold;
+  
+  color: rgb(96, 94, 94);
+  text-decoration: none;
+}
+
+.logo-name a:hover{
+  color: #000;
+}
+
+nav ul{
+  margin: 0;
+  padding: 0;
+  padding-right: 70px;
+  list-style: none;
+  
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 50px;
+  padding-top: 20px;
+ 
+
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+nav a{
+  color: rgb(96, 94, 94);
+  text-decoration: none;
+ 
+}
+
+nav a:hover {
+  color: #000;
+}
+
+nav a::before {
+  content:'';
+  display: block;
+  height: 3px;
+  background-color: #000;
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+
+  transition: all ease-in-out 200ms;
+}
+nav a:hover::before {
+  width: 100%;
+
+}
+/*
+This is the end of the section containing the style for the nav bar
+*/
+.main-page{
+  width: 2130px;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+
+}
+.description{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 130px;
+  width: 700px;
+  padding-top: 250px;
+  padding-left: 100px;
+
+}
+.my-avatar{
+  margin-left: 120px;
+}
+
+/* this is where the about me section starts */
+.about{
+padding-top: 160px;
+}
+.about img{
+  height: auto;
+  width: 420px;
+  border: 5px solid rgb(255, 255, 255);
+  
+}
+.about-text{
+  width: 550px;
+
+}
+.main{
+  width: 1130px;
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.about-text h1{
+  color: black;
+  font-size: 80px;
+  margin-bottom: 20px;
+}
+
+.about-text h5{
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  margin-bottom: 25px;
+  letter-spacing: 2px;
+}
+
+.about-text p{
+  color: black;
+  letter-spacing: 1px;
+  line-height: 28px;
+  font-size: 18px;
+  margin-bottom: 45px;
+  
+}
+
+.about-text p a{
+  color: rgb(239, 118, 118);
+
+}
+/*this is where the about me section ends */
+
+/* This is where the portfolio starts*/
+
+#contains-porfolio{
+  display: flex;
+  flex-direction: column;
+}
+.gallery{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  box-sizing: border-box;
+}
+
+.gallery img{
+  width: 360px;
+  height: 240px;
+  
+  
+}
+
+.card{
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 160px;
+  filter: grayscale(100%);
+  position: relative;
+  top: 0;
+  transition: top ease-in-out 0.5s;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.card a{
+  text-decoration: none;
+  color: black;
+}
+.card:hover{
+  filter: none;
+  top: -20px;
+  box-shadow: 0 10px 18px 0 rgba(0,0,0,0.2);
+
+}
+
+.text-container{
+  padding: 2px 16px;
+  background-color: beige;
+}
+/* This is where the portfolio ends*/
+
+/* This is where the Contact starts*/
+.contact{
+  position: relative;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+
+  padding: 10px 35px;
+  margin-top: 100px;
+  zoom: 1.5;
+}
+
+.contact::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  
+}
+
+.contact-box{
+  font-family: 'Montserrat', sans-serif;
+  max-width: 650px;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: left;
+  align-items: left;
+  text-align: left;
+}
+
+.input-fields{
+  font-family: 'Montserrat', sans-serif;
+  padding: 20px 1rem;
+  outline: none;
+  border: 2px solid rgba(0,0,0,0);
+  border-bottom: 1px solid black;
+  background-color: rgba(245, 245, 220, 0);
+  width: 400px;
+  font-size: 12px;
+  margin-bottom: 22px;
+  transition: .3s;
+}
+
+.input-fields:hover{
+  background-color:rgba(0,0,0,0.1);
+}
+
+.input-fields:focus{
+  background-color:#fff;
+  border: 2px solid rgba(30,85,250,0.47);
+}
+
+.btn{
+  font-family: 'Montserrat', sans-serif;
+  padding: 0.5rem 1rem;
+  font-size: 1.1rem;
+  background-color: black;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  color: #fff;
+  transition: .3s;
+
+}
+
+.btn:hover{
+  background-color: #fff;
+  color:#000;
+  border: 1px solid #000;
+}
+/* This is where the Contact starts*/
+
+/* This is where the Haiku page starts*/
+
+.videoSection{
+  width: 70%;
+  height: 40%;
+  margin: 50px 190px;
+  padding-left: 20px;
+  padding-top: 30px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  margin-bottom: 5px;
+}
+
+.haiku-textContainer{
+  display: flex;
+  flex-direction: column;
+  
+}
+.information{
+  Width: 700px;
+  height: auto;
+  margin-left: 200px;
+  padding-left: 10px;
+}
+.information p{
+  margin-bottom: 0;
+}
+ hr{
+  position: relative;
+  top: 20px;
+  border: none;
+  height: 2px;
+  background: rgba(161, 155, 155, 0.9);
+  margin-bottom: 30px;
+  width: 700px;
+  margin-left: 210px;
+  margin-right: 0;
+}
+.Categ-YearInfo{
+  width:700px;
+  margin-left: 210px;
+  display: flex;
+  justify-content: space-between;
+
+}
+.Categ-YearInfo h5{
+  margin-top: 0;
+  margin-bottom: 10px;
+
+}
+
+/* Footer */
+
+footer{
+  background: #FAE7DF;
+  height: auto;
+  width: auto;
+  padding: 40px;
+  padding-left: 0;
+  padding-bottom: 0;
+  
+}
+.footer-content{
+  display: flex;
+  width: auto;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.socials{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 0 0;
+  padding: 0;
+}
+.socials li{
+  margin: 0 10px;
+}
+.socials a{
+  text-decoration: none;
+  color: #000;
+}
+.socials a i{
+  font-size: 1.1rem;
+  position: relative;
+  transition: color .4s ease;
+}
+.socials a:hover i{
+  color: #E7C23E;
+}
+.footer-bottom{
+  width: auto;
+  text-align: center;
+}
+.footer-bottom p{
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+  font-family: 'Montserrat', sans-serif;
+}
