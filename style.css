@@ -306,6 +306,7 @@ padding-top: 160px;
 .haiku-textContainer{
   display: flex;
   flex-direction: column;
+  font-family: 'Montserrat', sans-serif;
   
 }
 .information{
